@@ -1,0 +1,121 @@
+/* Sidebar styling */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px; /* Adjust width for a narrow sidebar */
+  height: 100vh; /* Full height */
+  background-color: #ffffff; /* White background */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 1000;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo Section */
+.logo-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px; /* Space below the logo */
+}
+
+.sidebar-logo {
+  width: 50px; /* Adjust logo size */
+  height: auto;
+}
+
+.powered-by-text {
+  font-size: 10px;
+  color: #263b72;
+  text-align: center;
+  margin-top: 5px;
+}
+
+/* Menu Section */
+.menu {
+  flex-grow: 1; /* Fill the remaining space */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Space between menu items */
+}
+
+.menu-item {
+  background-color: #263b72;
+  color: #ffffff;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+  background-color: #1e2d56; /* Hover effect */
+}
+
+.icon,
+.chat-avatar-sidebar {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.chat-avatar-sidebar {
+  width: 30px; /* Set a fixed width for bot icon */
+  height: 30px; /* Set a fixed height for bot icon */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+
+/* Profile section */
+.profile-section {
+  margin-top: auto; /* Stick it to the bottom */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid #dcdcdc;
+  text-align: center;
+}
+
+/* Responsive Sidebar */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 60px; /* Narrower sidebar for tablets */
+  }
+
+  .menu-item {
+    width: 35px;
+    height: 35px;
+  }
+
+  .sidebar-logo {
+    width: 40px; /* Smaller logo */
+  }
+
+  .powered-by-text {
+    font-size: 8px; /* Smaller font for text */
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 50px; /* Narrow sidebar for smaller screens */
+  }
+
+  .menu-item {
+    width: 30px;
+    height: 30px;
+  }
+
+  .powered-by-text {
+    font-size: 7px; /* Very small font for small devices */
+  }
+
+  .sidebar-logo {
+    width: 35px; /* Even smaller logo for mobile */
+  }
+}

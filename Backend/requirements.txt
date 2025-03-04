@@ -1,0 +1,12 @@
+boto3==1.35.29
+Flask==3.0.3
+Flask_Cors==5.0.0
+Flask_JWT_Extended==4.6.0
+openai==1.52.0
+pandas==2.2.3
+pymongo==4.10.1
+python-dotenv==1.0.1
+Werkzeug==3.0.4
+gunicorn==23.0.0
+openpyxl==3.1.5
+hypercorn

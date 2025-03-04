@@ -1,0 +1,29 @@
+.dashboard-header {
+  padding: 40px 20px;
+  background: linear-gradient(118deg, #131b34 0%, #5b0ca2 50%, #9000ff 100%); /* Centers the text */
+  padding: 40px 20px; /* Adds padding for some spacing */
+ 
+  color: white; /* White text for contrast */
+  font-family: 'Be Vietnam', sans-serif; /* Ensure consistent font */
+  width:85%;
+  margin-left: 5%; /* Space between header and cards */
+  border-radius: 10px;
+}
+/* .dashboard-header {
+  padding: 40px 20px;
+  background: linear-gradient(118deg, #131b34 0%, #5b0ca2 50%, #9000ff 100%);
+  color: white;
+  border-radius: 10px;
+} */
+
+.dashboard-header h1 {
+  font-size: 36px; /* Large heading for impact */
+  font-weight: bold;
+  margin: 0;
+}
+
+.dashboard-header p {
+  font-size: 18px; /* Smaller subtitle */
+  margin-top: 10px;
+  color: #d3b3ff; /* Slightly lighter color for subtitle */
+}

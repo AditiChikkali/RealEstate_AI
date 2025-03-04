@@ -1,0 +1,5 @@
+.main-layout {
+  display: flex;
+  margin-left: 80px; /* Offset by sidebar width */
+  height: 100vh;
+}

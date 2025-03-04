@@ -1,0 +1,177 @@
+.footer-chat {
+  position: fixed;
+  bottom: 20px;
+  left: 55%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 800px;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 50px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #263b72;
+}
+
+.footer-chat input.chat-input {
+  flex: 1;
+  border: 1px solid #dcdcdc;
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-size: 16px;
+  margin-right: 15px;
+  text-align: left;
+  min-width: 675px;
+}
+
+.footer-chat .upload-button,
+.footer-chat .send-button {
+  /* display: flex; */
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circle buttons */
+  color: #263b72;
+}
+
+.footer-chat .upload-button:hover,
+.footer-chat .send-button:hover {
+  background: #f0f2f5;
+}
+
+.footer-chat .upload-button .fa-icon-upload,
+.footer-chat .send-button .send-icon {
+  font-size: 18px;
+}
+/* Icon styling */
+
+/* File Preview Popup */
+.file-preview-popup {
+  position: fixed;
+  /* Vertically center the popup */
+  left: 50%; /* Horizontally center the popup */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjust for the popup's width and height */
+  background: #ffffff; /* Background color */
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  border-radius: 10px; /* Rounded corners */
+  width: 90%; /* Take up 90% of the viewport width */
+  max-width: 400px; /* Max width for larger screens */
+  padding: 20px; /* Padding for inner content */
+  z-index: 20; /* Ensure it's above other content */
+}
+
+/* File Preview Content */
+.file-preview-content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #263b72;
+}
+
+.file-preview-content p {
+  font-size: 14px;
+  color: #555;
+  margin: 5px 0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px; /* Add space between buttons */
+}
+
+.button-container button {
+  /* Ensure buttons take equal space */
+  padding: 10px 20px;
+  font-size: 14px;
+  border: none;
+  /* border-radius: 3px; */
+  cursor: pointer;
+  width: 45%;
+  text-align: center;
+}
+
+.cancel-upload {
+  background-color: #f44336;
+  color: #ffffff;
+  /* transition: background-color 0.3s ease; */
+}
+
+.cancel-upload:hover {
+  background-color: #d32f2f; /* Darker red on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+.confirm-upload {
+  background-color: #4caf50;
+  color: #ffffff;
+  /* transition: background-color 0.3s ease; */
+}
+
+.confirm-upload:hover {
+  background-color: #388e3c; /* Darker green on hover */
+  transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Loader Overlay */
+.file-loader-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 30;
+}
+
+.file-loader {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #263b72;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive Adjustments */
+
+@media (max-width: 480px) {
+  .file-preview-popup {
+    width: 95%;
+    max-width: 300px;
+    padding: 15px;
+  }
+
+  .file-preview-content h3 {
+    font-size: 16px; /* Smaller heading font */
+  }
+
+  .file-preview-content p {
+    font-size: 12px; /* Smaller font size for text */
+  }
+
+  .button-container button {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

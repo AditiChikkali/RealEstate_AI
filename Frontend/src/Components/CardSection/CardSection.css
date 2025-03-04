@@ -1,0 +1,84 @@
+/* Centering the card-section container */
+.card-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100vh; /* Ensure it fills the viewport height */
+  padding: 20px; /* Optional padding */
+  margin-left: 0; /* Remove extra left margin to prevent overflow */
+  margin-top: -85px; /* Adjust this value to move it higher */
+}
+
+/* Carousel Container */
+.carousel-container {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 100%; /* Make sure the width is 100% to stay within screen bounds */
+  max-width: 700px; /* Optional: set a max-width to avoid large overflow */
+  margin: auto;
+  position: relative;
+}
+
+/* Each Carousel Slide */
+.carousel-slide {
+  flex: 0 0 100%; /* Each slide takes up 100% width */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Ensure slides are centered */
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* Card styling */
+.card {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%; /* Adjust the card width for some margin within the slide */
+  max-width: 700px; /* Optional: set a max-width for the card */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px; /* Add spacing between carousel slides */
+}
+
+/* Chart container to hold the chart */
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Adjust the height as needed */
+  width: 80%; /* Ensure it fills the parent card */
+}
+
+/* Carousel dots */
+.carousel-dots {
+  display: flex;
+  justify-content: center; /* Center the dots */
+  margin-top: 15px; /* Add margin to separate from the chart */
+  width: 100%; /* Ensure dots container takes full width */
+  overflow: hidden; /* Prevent overflow */
+}
+
+.carousel-dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 5px;
+  background-color: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.carousel-dot.active {
+  background-color: #263b72; /* Active dot color */
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 300px; /* Reduce chart size for smaller screens */
+  }
+}

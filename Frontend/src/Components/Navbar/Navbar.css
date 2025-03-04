@@ -1,0 +1,46 @@
+/* Navbar container */
+.navbar {
+  position: fixed;
+  top: 0; /* Stick to the top of the screen */
+  left: 0;
+  width: 100%; /* Full width of the viewport */
+  height: 100px; /* Adjusted height for better visuals */
+  background-color: #ffffff; /* Consistent white background */
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Align content to the left */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+  z-index: 1000; /* Ensure it stays above all other content */
+  padding: 0 20px; /* Add padding for inner spacing */
+}
+
+/* Welcome message */
+.gradient-text {
+  background: linear-gradient(to right, #263b72, #56acbf, #c1f227);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 100px; /* Aligns with sidebar */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .gradient-text {
+    font-size: 18px; /* Smaller font size for smaller screens */
+    margin-left: 70px; /* Align with a smaller sidebar */
+  }
+
+  .navbar {
+    height: 50px; /* Reduce navbar height for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .gradient-text {
+    font-size: 16px; /* Further reduce font size for mobile */
+    margin-left: 50px; /* Align with the smallest sidebar width */
+  }
+}
